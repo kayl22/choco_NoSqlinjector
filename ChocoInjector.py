@@ -10,7 +10,6 @@ def def_handler(sig, frame):
     sys.exit(1)
 signal.signal(signal.SIGINT, def_handler)
 
-
 def username_scan(all_letters, url, characters):
    users = []
    p1 = log.progress("NoSql usernames bruteforce attack")
@@ -64,7 +63,6 @@ def nosql_request(username, url, characters):
     return password
 
 
-
 url = input("\n[*]TYPE THE URL WITH ALL THE ROUTES(ex. https://willyrex/route/1/login): ")
 characters = string.ascii_lowercase + string.ascii_uppercase + string.digits
 username = "admin"
@@ -109,6 +107,7 @@ if __name__ == '__main__':
                  
         elif num == "4":
             def_handler(1, 2)
+            
         else:
             os.system("clear")
             pass
