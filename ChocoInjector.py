@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+#author: KAYL
+#github: https://github.com/kayl22
 
 from pwn import *
 import time, requests, sys, string, signal, os
